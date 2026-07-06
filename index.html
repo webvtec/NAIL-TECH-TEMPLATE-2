@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>ATM BEAUTY STYLES – Book Your Appointment</title>
+<title>Sh’G NAILZ BUTEE CLUB – Book Your Appointment</title>
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="description" content="ATM BEAUTY STYLES – Premium nail tech services in Kingston, Jamaica. Gel nails, acrylics, nail art, pedicures & more. Book your appointment today.">
-<meta name="keywords" content="ATM Beauty Styles, ATM beauty Jamaica, nail salon Kingston Jamaica, gel nails Kingston, acrylic nails Kingston Jamaica, nail art Jamaica, pedicure Kingston, nail tech Hope Road Kingston, nail technician Kingston, book nail appointment Jamaica">
-<meta name="author" content="ATM BEAUTY STYLES">
+<meta name="description" content="Sh’G NAILZ BUTEE CLUB – Premium nail tech services in Ocho Rios, Jamaica. Gel nails, acrylics, nail art, pedicures & more. Book your appointment today.">
+<meta name="keywords" content="Sh'G Nailz Butee Club, nail salon Ocho Rios Jamaica, gel nails Ocho Rios, acrylic nails Ocho Rios Jamaica, nail art Jamaica, pedicure Ocho Rios, nail tech Content Gardens Ocho Rios, nail technician Jamaica, book nail appointment Jamaica">
+<meta name="author" content="Sh’G NAILZ BUTEE CLUB">
 <link rel="canonical" href="https://atmbeautystyles.com/">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ATM BEAUTY STYLES – Book Your Appointment">
-<meta property="og:description" content="Premium hair & beauty services in Kingston, Jamaica. Book your appointment online now.">
-<meta property="og:site_name" content="ATM BEAUTY STYLES">
+<meta property="og:title" content="Sh’G NAILZ BUTEE CLUB – Book Your Appointment">
+<meta property="og:description" content="Premium nail tech services in Ocho Rios, Jamaica. Book your appointment online now.">
+<meta property="og:site_name" content="Sh’G NAILZ BUTEE CLUB">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="referrer" content="no-referrer-when-downgrade">
 
@@ -20,14 +20,14 @@
 {
   "@context": "https://schema.org",
   "@type": "NailSalon",
-  "name": "ATM BEAUTY STYLES",
+  "name": "Sh’G NAILZ BUTEE CLUB",
   "url": "https://atmbeautystyles.com",
-  "description": "Premium nail salon offering gel nails, acrylics, nail art, pedicures and more in Kingston, Jamaica.",
+  "description": "Premium nail salon offering gel nails, acrylics, nail art, pedicures and more in Ocho Rios, Jamaica.",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "5 Hope Road",
-    "addressLocality": "Kingston",
+    "streetAddress": "Lot 14 Content Gardens Rd",
+    "addressLocality": "Ocho Rios",
     "addressCountry": "JM"
   },
   "sameAs": [
@@ -98,19 +98,25 @@ body {
 .brand-name {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 4px;
+  font-size: 12px;
+  letter-spacing: 0.5px;
   text-transform: uppercase;
   background: linear-gradient(120deg, var(--mint) 0%, var(--champagne) 55%, var(--emerald) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  white-space: nowrap;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .top-actions {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-shrink: 0;
 }
 
 .top-icon-btn {
@@ -217,8 +223,28 @@ body {
 
 /* ===================== HERO / GALLERY ===================== */
 .gallery-hero {
-  padding: 32px 20px 12px;
+  padding: 48px 20px 28px;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.gallery-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: url('https://images.unsplash.com/photo-1777287216954-2b4b22bb6bf2?fm=jpg&q=80&w=1600&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center 30%;
+}
+
+.gallery-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgba(10,10,10,0.55) 0%, rgba(10,10,10,0.82) 55%, var(--onyx) 100%);
 }
 
 .gallery-hero-eyebrow {
@@ -238,6 +264,7 @@ body {
   color: var(--white);
   letter-spacing: 1px;
   margin-bottom: 8px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
 }
 
 .gallery-hero-title em {
@@ -250,9 +277,10 @@ body {
 
 .gallery-hero-sub {
   font-size: 13px;
-  color: var(--textdim);
+  color: var(--text);
   margin-bottom: 22px;
   line-height: 1.6;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.6);
 }
 
 .hero-cta-row {
@@ -808,7 +836,7 @@ input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(0.6); }
 
 <!-- TOP BAR -->
 <header class="top-bar">
-  <div class="brand-name">MIA’S NAILS</div>
+  <div class="brand-name">Sh’G NAILZ BUTEE CLUB</div>
   <div class="top-actions">
     <a class="top-icon-btn" href="https://maps.app.goo.gl/eCKXuvmy4bNCty3V7" target="_blank" title="Get Directions" aria-label="Location">
       <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -820,7 +848,8 @@ input[type="date"]::-webkit-calendar-picker-indicator { filter: invert(0.6); }
 <!-- ===== STYLES VIEW ===== -->
 <div class="view active" id="viewStyles">
   <div class="gallery-hero">
-    <p class="gallery-hero-eyebrow">5 Hope Road · Kingston, Jamaica</p>
+    <div class="gallery-hero-bg"></div>
+    <p class="gallery-hero-eyebrow">📍 Lot 14 Content Gardens Rd, Ocho Rios, Jamaica</p>
     <h1 class="gallery-hero-title">Where <em>Beauty</em><br>Meets Artistry</h1>
     <p class="gallery-hero-sub">Premium gel nails, acrylics, nail art & more.<br>Mon – Sat · 8:00 AM – 5:00 PM</p>
     <div class="hero-cta-row">
